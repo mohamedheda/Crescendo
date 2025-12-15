@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="htmlElement">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Crescendo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar bg-dark text-white py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <a href="mailto:info@crescendo.com" class="text-white-50 text-decoration-none me-4">
+                        <i class="bi bi-envelope me-2"></i>info@crescendo.com
+                    </a>
+                    <a href="tel:+1234567890" class="text-white-50 text-decoration-none">
+                        <i class="bi bi-telephone me-2"></i>+123 456 7890
+                    </a>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <button class="btn btn-sm btn-link text-white-50 p-0" id="langToggle">AR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold brand-logo" href="index.html">CRESCENDO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            Our services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a href="contact.html" class="btn btn-primary">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Photo Slider -->
+    <section id="mainSlider" class="carousel slide pt-0" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="slider-overlay"></div>
+                <div class="slider-content">
+                    <div class="container">
+                        <h1 class="slider-title">EXPERIENTIAL & CONTENT-BASED TRAININGS</h1>
+                        <p class="slider-subtitle">Transform Your Team with Innovative Training Programs</p>
+                        <p class="slider-description">We deliver comprehensive training solutions designed to drive success and growth for your organization.</p>
+                        <a href="contact.html" class="btn btn-primary btn-lg mt-3">Get in touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="slider-overlay"></div>
+                <div class="slider-content">
+                    <div class="container">
+                        <h1 class="slider-title">Professional Training Services</h1>
+                        <p class="slider-subtitle">Your Trusted Learning Partner</p>
+                        <p class="slider-description">Experience world-class training programs delivered by our dedicated team of expert facilitators.</p>
+                        <a href="services.html" class="btn btn-primary btn-lg mt-3">Our Services</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="slider-overlay"></div>
+                <div class="slider-content">
+                    <div class="container">
+                        <h1 class="slider-title">Believing in People</h1>
+                        <p class="slider-subtitle">Empowering Teams Through Experiential Learning</p>
+                        <p class="slider-description">We believe that people are the most important asset in every business. Let us help unlock your team's potential.</p>
+                        <a href="contact.html" class="btn btn-primary btn-lg mt-3">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </section>
+
+    <!-- Our Services -->
+    <section id="ourServices" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title-large">OUR SERVICES</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 col-lg-4">
+                    <div class="service-card-modern h-100">
+                        <div class="service-image-modern">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Team Building" class="img-fluid">
+                        </div>
+                        <div class="service-content-modern p-4">
+                            <h4 class="service-title-modern">TEAM BUILDING</h4>
+                            <a href="services.html" class="service-link">Find out more <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="service-card-modern h-100">
+                        <div class="service-image-modern">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Content-Based Training" class="img-fluid">
+                        </div>
+                        <div class="service-content-modern p-4">
+                            <h4 class="service-title-modern">CONTENT-BASED TRAINING</h4>
+                            <a href="services.html" class="service-link">Find out more <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="service-card-modern h-100">
+                        <div class="service-image-modern">
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Assessments & Surveys" class="img-fluid">
+                        </div>
+                        <div class="service-content-modern p-4">
+                            <h4 class="service-title-modern">ASSESSMENTS & SURVEYS</h4>
+                            <a href="services.html" class="service-link">Find out more <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="service-card-modern h-100">
+                        <div class="service-image-modern">
+                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Coaching & Consulting" class="img-fluid">
+                        </div>
+                        <div class="service-content-modern p-4">
+                            <h4 class="service-title-modern">COACHING & CONSULTING</h4>
+                            <a href="services.html" class="service-link">Find out more <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="service-card-modern h-100">
+                        <div class="service-image-modern">
+                            <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corporate Race Events" class="img-fluid">
+                        </div>
+                        <div class="service-content-modern p-4">
+                            <h4 class="service-title-modern">CORPORATE RACE EVENTS</h4>
+                            <a href="services.html" class="service-link">Find out more <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="service-card-modern h-100">
+                        <div class="service-image-modern">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Health & Safety Training" class="img-fluid">
+                        </div>
+                        <div class="service-content-modern p-4">
+                            <h4 class="service-title-modern">HEALTH & SAFETY TRAINING</h4>
+                            <a href="services.html" class="service-link">Find out more <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="videoSection" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="section-title">Watch Our Story</h2>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                    <div class="video-wrapper">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Tuw8hxrFBH8?si=x_vikm8FGLNPKnKh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Clients -->
+    <section id="ourClients" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="clients-text-box p-4">
+                        <h3 class="clients-title mb-4">Our Clients</h3>
+                        <p class="clients-description mb-4">WE BELIEVE THAT PEOPLE ARE THE MOST IMPORTANT ASSET IN EVERY BUSINESS. A TEAM CAN HAVE THE NEWEST TECHNOLOGIES AND INNOVATIONS BUT, IF THEY DO NOT WORK TOGETHER EFFICIENTLY OR EFFECTIVELY, THEY WON'T BE ABLE TO FULFILL THE DESIRED OUTCOMES.</p>
+                        <a href="#" class="btn btn-outline-primary">Check out our work</a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="clients-logo-grid">
+                        <div class="client-logo-item">
+                            <img src="https://img.icons8.com/color/96/000000/amazon.png" alt="Amazon" class="client-logo-img" onerror="handleLogoError(this)">
+                            <div class="logo-placeholder">Amazon</div>
+                        </div>
+                        <div class="client-logo-item">
+                            <img src="https://img.icons8.com/color/96/000000/vodafone.png" alt="Vodafone" class="client-logo-img" onerror="handleLogoError(this)">
+                            <div class="logo-placeholder">Vodafone</div>
+                        </div>
+                        <div class="client-logo-item">
+                            <img src="https://img.icons8.com/color/96/000000/exxon-mobil.png" alt="Mobil" class="client-logo-img" onerror="handleLogoError(this)">
+                            <div class="logo-placeholder">Mobil</div>
+                        </div>
+                        <div class="client-logo-item">
+                            <img src="https://img.icons8.com/color/96/000000/procter-and-gamble.png" alt="P&G" class="client-logo-img" onerror="handleLogoError(this)">
+                            <div class="logo-placeholder">P&G</div>
+                        </div>
+                        <div class="client-logo-item">
+                            <img src="https://img.icons8.com/color/96/000000/samsung.png" alt="Samsung" class="client-logo-img" onerror="handleLogoError(this)">
+                            <div class="logo-placeholder">Samsung</div>
+                        </div>
+                        <div class="client-logo-item">
+                            <img src="https://img.icons8.com/color/96/000000/xerox.png" alt="Xerox" class="client-logo-img" onerror="handleLogoError(this)">
+                            <div class="logo-placeholder">Xerox</div>
+                        </div>
+                        <div class="client-logo-item">
+                            <img src="https://img.icons8.com/color/96/000000/deloitte.png" alt="Deloitte" class="client-logo-img" onerror="handleLogoError(this)">
+                            <div class="logo-placeholder">Deloitte</div>
+                        </div>
+                        <div class="client-logo-item">
+                            <img src="https://img.icons8.com/color/96/000000/microsoft.png" alt="Microsoft" class="client-logo-img" onerror="handleLogoError(this)">
+                            <div class="logo-placeholder">Microsoft</div>
+                        </div>
+                        <div class="client-logo-item">
+                            <img src="https://img.icons8.com/color/96/000000/ibm.png" alt="IBM" class="client-logo-img" onerror="handleLogoError(this)">
+                            <div class="logo-placeholder">IBM</div>
+                        </div>
+                        <div class="client-logo-item">
+                            <img src="https://img.icons8.com/color/96/000000/oracle-logo.png" alt="Oracle" class="client-logo-img" onerror="handleLogoError(this)">
+                            <div class="logo-placeholder">Oracle</div>
+                        </div>
+                        <div class="client-logo-item">
+                            <img src="https://img.icons8.com/color/96/000000/cisco.png" alt="Cisco" class="client-logo-img" onerror="handleLogoError(this)">
+                            <div class="logo-placeholder">Cisco</div>
+                        </div>
+                        <div class="client-logo-item">
+                            <img src="https://img.icons8.com/color/96/000000/hp.png" alt="HP" class="client-logo-img" onerror="handleLogoError(this)">
+                            <div class="logo-placeholder">HP</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="quoteSection" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="quote-handwritten">
+                        <h2 class="quote-text-handwritten">Believing in People</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="quote-text-box p-4">
+                        <p class="quote-description">WE BELIEVE THAT PEOPLE ARE THE MOST IMPORTANT ASSET IN EVERY BUSINESS. A TEAM CAN HAVE THE NEWEST TECHNOLOGIES/EQUIPMENT AND INNOVATIONS BUT, IF THEY DO NOT WORK TOGETHER EFFICIENTLY OR EFFECTIVELY, THEY WON'T BE ABLE TO FULFILL THE DESIRED OUTCOMES.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infographic Section -->
+    <section id="infographicSection" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title mb-4">Our Training Impact</h2>
+                    <div class="dialog-box p-4">
+                        <p>Our comprehensive training approach has delivered measurable results across multiple industries. We combine expertise, innovation, and dedication to create lasting learning value for our clients.</p>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Proven training methodologies</li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Industry-specific expertise</li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> High participant satisfaction</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="infographic-image">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Training Impact Statistics" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <!-- First Section -->
+            <div class="row mb-4 pb-4 border-bottom">
+                <div class="col-lg-8 mb-3 mb-lg-0">
+                    <h5 class="mb-3">Stay Connected</h5>
+                    <p>Subscribe to our newsletter to receive the latest updates and insights.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Get In Touch</a>
+                </div>
+            </div>
+            <!-- Second Section -->
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Our Services</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h6 class="mb-3">Contact Us</h6>
+                    <div class="contact-info">
+                        <p class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> 123 Business Street, City, Country</p>
+                        <p class="mb-2"><i class="bi bi-telephone-fill me-2"></i> +123 456 7890</p>
+                        <p class="mb-3"><i class="bi bi-envelope-fill me-2"></i> info@crescendo.com</p>
+                        <div class="social-links">
+                            <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
+                            <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-5"></i></a>
+                            <a href="#" class="text-white me-3"><i class="bi bi-linkedin fs-5"></i></a>
+                            <a href="#" class="text-white"><i class="bi bi-instagram fs-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 pt-4 border-top">
+                <div class="col-12 text-center">
+                    <p class="mb-0 text-white-50">&copy; 2026 Crescendo. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
