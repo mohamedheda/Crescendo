@@ -277,3 +277,34 @@ function handleLogoError(img) {
     }
 }
 
+// ============================================
+// Cookie Consent Banner
+// ============================================
+document.addEventListener('DOMContentLoaded', function() {
+    const cookieConsent = document.getElementById('cookieConsent');
+    const acceptCookiesBtn = document.getElementById('acceptCookies');
+    
+    if (cookieConsent && acceptCookiesBtn) {
+        // Check if user has already accepted cookies
+        const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+        
+        if (!cookiesAccepted) {
+            // Show cookie consent banner after a short delay
+            setTimeout(() => {
+                cookieConsent.classList.add('show');
+            }, 500);
+        }
+        
+        // Handle accept button click
+        acceptCookiesBtn.addEventListener('click', function() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            cookieConsent.classList.remove('show');
+            
+            // Hide banner completely after animation
+            setTimeout(() => {
+                cookieConsent.style.display = 'none';
+            }, 300);
+        });
+    }
+});
+
